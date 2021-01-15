@@ -8,15 +8,15 @@
 
 # Commands that I ran Terminal to see whats happening in the sytem
 
-docker build . -t "name"  - to build run this command . for directory and -t for tagg or 
-Docker images             - and you see get the images 
-Docker start "name"       - to start this container, "name" of the containers you called it
-Docker stop "name"        - to stop it
-Docker ps                 - sees the containers thats running
+* docker build . -t "name"  - to build run this command . for directory and -t for tagg or 
+* Docker images             - and you see get the images 
+* Docker start "name"       - to start this container, "name" of the containers you called it
+* Docker stop "name"        - to stop it
+* Docker ps                 - sees the containers thats running
 
-df -h                     - and you will get Filesystem: size,capacity , whats mounted and more.
-top                       - see the proccesses
-free -m                   - see the memory in mb
+* df -h                     - and you will get Filesystem: size,capacity , whats mounted and more.
+* top                       - see the proccesses
+* free -m                   - see the memory in mb
 
 
 
