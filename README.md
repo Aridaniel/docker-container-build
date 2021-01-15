@@ -1,15 +1,15 @@
 # This is our Crypto app from last group project, decided to use that to make an image and a container
 
-## Made a Dockerfile with few commands, they have description what they do.
+* Made a Dockerfile with few commands, they have description what they do.
 
-I build a containes called I tagged it as dockerpractise it got called (name) : gallant_bassi 
+* I build a container  tagged it as "dockerpractise" it got called (name) : gallant_bassi 
 
 
 
 # Commands that I ran Terminal to see whats happening in the sytem
 
 docker build . -t "name"  - to build run this command . for directory and -t for tagg or 
-Docker images             - and you get the images 
+Docker images             - and you see get the images 
 Docker start "name"       - to start this container, "name" of the containers you called it
 Docker stop "name"        - to stop it
 Docker ps                 - sees the containers thats running
