@@ -3,7 +3,7 @@ import Currency from './components/Currency';
 import News from './components/News';
 import Join from './components/Join';
 import Menu from './components/Menu';
-import Banner from './components/Banner';
+import Banner from '../Banner';
 import './app.css';
 
 

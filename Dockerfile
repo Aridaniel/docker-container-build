@@ -1,7 +1,7 @@
 #Set the base image
 FROM node:latest
 
-#Rund this mkdir commanda to make new directory
+#Rund this mkdir command to make new directory
 RUN mkdir /Dockerfiles
 
 #Set the directory
@@ -18,6 +18,8 @@ COPY . .
 
 #Exposes this port on the container to the outside world
 EXPOSE 3000
+
+
 
 # Then last we run npm start to open up app
 CMD ["npm", "start"]
