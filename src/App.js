@@ -3,12 +3,45 @@ import Currency from './components/Currency';
 import News from './components/News';
 import Join from './components/Join';
 import Menu from './components/Menu';
+import Banner from './components/Banner';
 import './app.css';
+
+
+
 
 function App() {
   const [isMobile, setIsMobile] = useState(false);
   const [showMenu, setShowMenu] = useState(false);
   const [visibleOnMobile, setVisibleMobile] = useState(<News />);
+  
+  
+
+
+
+  const api = 'https://api.coincap.io/v2/assets';
+
+  const [currencyData, setCurrencyData] = useState([]);
+
+
+  useEffect(() => {
+
+    fetch(api)
+    .then(res => {
+      if(!res.ok) {
+        throw Error(res.statusText + ' - ' + res.url);
+      }
+      return res.json()
+    })
+    .then((data) => setCurrencyData(data.data))
+    .catch((error) => console.log('Error: ' + error));
+
+  }, []);
+
+
+
+
+
+
 
   // Runs when component mounts
   useEffect(() => {
@@ -59,12 +92,14 @@ function App() {
             <News />
             </div>
           <div className="currency__desktopbox">
-            <Currency />
+            <Currency currencyData={currencyData} />
           </div>
           <div className="join__desktopbox">
             <Join />
           </div>
         </div>
+
+        <div><Banner currencyData={currencyData}/></div>
         </>
       )
     }
