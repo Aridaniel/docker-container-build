@@ -14,6 +14,8 @@
 * Docker stop "name"                --- to stop it
 * Docker ps                         --- sees the containers thats running
 
+* Docker stats                      --- see containers runnig and their, cpu , mem usage, net I/O, PIDS= processes
+
 * df -h                             --- and you will get Filesystem: size,capacity , whats mounted and more.
 * top                               --- see the proccesses
 * free -m                           --- see the memory in mb
