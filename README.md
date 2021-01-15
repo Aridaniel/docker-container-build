@@ -1,6 +1,6 @@
 # This is our Crypto app from last group project, decided to use that to make an image and a container
 
-# Made a Dockerfile with few commands, they have description what they do.
+## Made a Dockerfile with few commands, they have description what they do.
 
 I build a containes called I tagged it as dockerpractise it got called (name) : gallant_bassi 
 
@@ -22,7 +22,13 @@ free -m                   - see the memory in mb
 
 
 
-........
+................
+
+
+
+
+
+
 
 
 
